@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./drumkit.css" />
+    <script src="./drumkit.js" defer></script>
+    <title>Drumkit</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="drummachine-container">
+        <img class="drummachine" src="./mpx8/MPX8cut.jpg" alt="" />
+        <div class="screen-container">
+          <h1>hello</h1>
+          <p>press keys to play sounds</p>
+          <!-- <div class="screen"></div> -->
+        </div>
+        <!-- <div class="container"> -->
+        <div class="a pad padkick" data-key="a"><p>kick</p></div>
+        <div class="s pad padsnare" data-key="s"><p>snare</p></div>
+        <div class="d pad padclap" data-key="d"><p>clap</p></div>
+        <div class="f pad padchat" data-key="f"><p>closed hat</p></div>
+        <div class="g pad padohat" data-key="g"><p>open hat</p></div>
+        <div class="h pad padclave" data-key="h"><p>clave</p></div>
+        <div class="j pad padcymbal" data-key="j"><p>cymbal</p></div>
+        <div class="k pad padcowbell" data-key="k"><p>cowbell</p></div>
+      </div>
+
+      <!-- </div> -->
+
+      <audio
+        class="audio-file"
+        src="./Drums/Drumkit - House/dhg_kick_analog.wav"
+        data-key="a"
+      ></audio>
+
+      <audio
+        class="audio-file"
+        src="./Drums/Drumkit - House/dhg_snare_uk.wav"
+        data-key="s"
+      ></audio>
+
+      <audio
+        class="audio-file"
+        src="./Drums/Drumkit - House/dhg_clap_garage.wav"
+        data-key="d"
+      ></audio>
+
+      <audio
+        class="audio-file"
+        src="./Drums/Drumkit - House/dhg_hat_track.wav"
+        data-key="f"
+      ></audio>
+
+      <audio
+        class="audio-file"
+        src="./Drums/Drumkit - House/dhg_hat_attack.wav"
+        data-key="g"
+      ></audio>
+
+      <audio
+        class="audio-file"
+        src="./Drums/Drumkit - House/dhg_perc_clave.wav"
+        data-key="h"
+      ></audio>
+
+      <audio
+        class="audio-file"
+        src="./Drums/Drumkit - House/dhg_cymbal_yellow.wav"
+        data-key="j"
+      ></audio>
+
+      <audio
+        class="audio-file"
+        src="./Drums/Drumkit - House/dhg_perc_cowton.wav"
+        data-key="k"
+      ></audio>
+    </div>
+  </body>
+</html>

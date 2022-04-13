@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5fcd2;
+  overflow: hidden;
+  font-family: "Play", sans-serif;
+  color: #ffc2af;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drummachine-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.drummachine {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.screen-container {
+  position: absolute;
+  top: 18.5rem;
+  left: 12rem;
+  height: 14.2rem;
+  width: 29rem;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+.screen-container h1 {
+  animation: scaleup steps(3) 2500ms infinite;
+}
+@keyframes scaleup {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.pad {
+  width: 16rem;
+  height: 16rem;
+  background-image: url(./mpx8/Pad.jpg);
+  border-radius: 5%;
+  position: absolute;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.padPressed {
+  background-image: url(./mpx8/PadSelected.jpg);
+  transition: all 130ms;
+  color: #16a452;
+  font-size: 1.8rem;
+}
+
+.padkick {
+  top: 15.5rem;
+  left: 66.5rem;
+}
+
+.padsnare {
+  top: 15.5rem;
+  left: 85rem;
+}
+
+.padclap {
+  top: 15.5rem;
+  left: 103rem;
+}
+
+.padchat {
+  top: 15.5rem;
+  left: 121rem;
+}
+
+.padohat {
+  top: 34rem;
+  left: 66.5rem;
+}
+
+.padclave {
+  top: 34rem;
+  left: 85rem;
+}
+.padcymbal {
+  top: 34rem;
+  left: 103rem;
+}
+.padcowbell {
+  top: 34rem;
+  left: 121rem;
+}
+audio {
+  display: none;
+}
