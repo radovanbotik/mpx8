@@ -65,12 +65,23 @@ body {
   background-image: url(./mpx8/Pad.jpg);
   border-radius: 5%;
   position: absolute;
-
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-shadow: 0 0 10px #ffc2af;
+  animation: glowup steps(10) 3s infinite;
+}
+
+@keyframes glowup {
+  0%,
+  100% {
+    text-shadow: 0 0 15px #ffc2af;
+  }
+  50% {
+    text-shadow: none;
+  }
 }
 .padPressed {
   background-image: url(./mpx8/PadSelected.jpg);
